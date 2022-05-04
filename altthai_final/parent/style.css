@@ -161,6 +161,7 @@ nav {
   color: var(--default-bg);
   padding: 0.6rem;
   margin: -0.6rem;
+  font-size: clamp(1.6rem, 1.5vw, 2.8rem);
   transition: all 0.25s ease-in-out;
 }
 .nav__btn--link:active,
