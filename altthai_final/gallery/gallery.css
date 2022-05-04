@@ -1,0 +1,111 @@
+.gallery {
+  margin-top: 15rem;
+}
+.gallery__title {
+  font-size: 6rem;
+  text-align: center;
+}
+.gallery__subtitle {
+  font-size: 4.4rem;
+  text-align: center;
+}
+#gallery__wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 2.5rem 2.5rem 8rem 2.5rem;
+  width: 75vw;
+}
+.card {
+  background-color: #fafafafa;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.6);
+  font-family: var(--para-ft);
+  margin: 2.5rem;
+  max-height: 350rem;
+  max-width: max-content;
+  padding: 0.5rem;
+  transition: all 0.25s ease-in-out;
+}
+.card__imgholder {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+.card__img {
+  border-radius: 0.8rem;
+  border: solid 0.3rem red;
+  width: clamp(20rem, 15vw, 28rem);
+  height: auto;
+}
+.card__info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.card__titleholder {
+  align-items: center;
+  display: flex;
+  font-size: clamp(2rem, 1.5vw, 2.8rem);
+  justify-content: space-between;
+  margin-right: auto;
+  padding-bottom: 0.5rem;
+  padding: 0 2rem;
+}
+.card__btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--logo-green);
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.3);
+  height: clamp(2.2rem, 2vw, 3.2rem);
+  transition: all 0.25s ease-in-out;
+  height: clamp(2.2rem, 2vw, 3.2rem);
+}
+.card__btn:active,
+.card__btn:hover {
+  background-color: var(--logo-orange);
+}
+.card__link {
+  color: #000;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  padding: 0.4rem;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+}
+.card__link:active,
+.card__link:hover {
+  color: var(--default-bg);
+}
+.card__text {
+  font-size: clamp(1.8rem, 1vw, 2rem);
+  padding: 0.5rem 0rem 2rem 2rem;
+}
+.card__out {
+  margin: auto;
+  max-width: 30rem;
+  padding: 0.5rem 0rem 2rem 2rem;
+}
+.removed {
+  display: none;
+}
+.card__img--desc {
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 1024px) {
+  #gallery__wrapper {
+    padding: 1.8rem 1.8rem 4rem 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #gallery__wrapper {
+    padding: 1rem 1rem 4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+}

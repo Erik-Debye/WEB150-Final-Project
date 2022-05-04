@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./parent/style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/fd19f12e7d.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+    <!--FAVICONS-->
+    <link rel="shortcut icon" href="./favicons/favicon.ico" />
+    <link rel="icon" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="icon" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" sizes="192x192" href="./favicons/android-chrome-192x192.png" />
+    <link rel="icon" sizes="512x512" href="./favicons/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+    <title>Altthai - Arlington Heights Homepage</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav__bar">
+        <!--LOGO & Buttons -->
+        <a href="./index.html">
+          <img
+            src="./src/Logo_white--400w.png"
+            alt="AltThai Logo"
+            class="nav__bar__logo"
+            aria-roledescription="Link to Homepage"
+          />
+        </a>
+        <nav id="main__nav">
+          <div class="link__group">
+            <a href="./gallery/gallery.html" class="nav__link nav__link__underline">Gallery</a>
+            <a href="./about/about.html" class="nav__link nav__link__underline">About</a>
+            <a href="./contact/contact.html" class="nav__link nav__link__underline">Contact</a>
+          </div>
+          <div class="cta__group">
+            <a href="./menu/menu.html" class="nav__link cta__color">Menu</a>
+            <button id="nav__btn" class="nav__btn cta__color cta__color--2" type="button">
+              <a
+                id="nav__link"
+                href="https://www.toasttab.com/altthai/v2/online-order#!/"
+                class="nav__btn--link"
+                >Order Online</a
+              >
+            </button>
+          </div>
+          <div class="hamburger">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+          </div>
+          </div> 
+        </nav>
+        <nav class="ham__nav">
+            <div class="ham__link__group">
+              <a href="./gallery/gallery.html" class="ham__nav__link nav__link__underline">Gallery</a>
+              <a href="./about/about.html" class="ham__nav__link nav__link__underline">About</a>
+              <a href="./contact/contact.html" class="ham__nav__link nav__link__underline">Contact</a>
+            </div>
+            <div class="ham__cta__group">
+              <a href="./menu/menu.html" class="nav__link cta__color">Menu</a>
+              <button class="nav__btn cta__color cta__color--2" type="button">
+                <a
+                  id="nav__link"
+                  href="https://www.toasttab.com/altthai/v2/online-order#!/"
+                  class="nav__btn--link"
+                  >Order Online</a
+                >
+              </button>
+        </nav>
+      </div>
+      <div class="header__titles">
+        <h1 class="header__main">Welcome to <span class="alt">Alt</span><span class="thai">Thai</span></h1>
+        <h2 class="header__secondary">Modern Thai & Pan-Asian Cuisine</h2>
+      </div>
+      <button class="header__btn" type="button">
+        <a
+          href="https://www.yelp.com/reservations/altthai-arlington-heights?from_reserve_now=1"
+          class="header__link"
+          >Make a Reservation</a
+        >
+      </button>
+      <button id='header__btn--2' class="header__btn" type="button">
+        <a
+          href="https://www.yelp.com/reservations/altthai-arlington-heights?from_reserve_now=1"
+          class="header__link"
+          >Order Online</a
+        >
+      </button>
+      <h3 class="header__tertiary">
+        (847) 797 8442 &nbsp;|&nbsp; 40 S. Arlington Heights Road Arlington Heights, IL 60005
+      </h3>
+    </header>
+    <section class="about">
+      <div class="about__container">
+        <div class="about__col about__col--1">
+          <h2 class="about__main">Fresh and Contemporary Eats</h2>
+          <p class="about__txt">
+            This establishment aspires to create modern Thai and Pan-Asian dishes, <br />
+            aiming to keep a focus on the traditional while still embracing new flavors.
+          </p>
+        </div>
+        <div class="about__col about__col--2">
+          <figure class="about__figure">
+            <img src="./src/tomyumsoup--800w.jpg" alt="An image of Shrimp Tom Yum Soup" class="about__figure--image" />
+            <figcaption class="about__figure--caption">Delicious Shrimp Tom Yum Soup.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="about__container">
+        <div class="about__col about__col--1">
+          <figure class="about__figure">
+            <img
+              src="./src/restaurant--800w.jpg"
+              alt="An image of the space within the restaurant"
+              class="about__figure--image"
+            />
+            <figcaption class="about__figure--caption">The Elegant Dining Room of AltThai.</figcaption>
+          </figure>
+        </div>
+        <div class="about__col about__col--2">
+          <h2 class="about__main">Humble Beginings</h2>
+          <p class="about__txt">
+            AltThai was established in 2005 by Kevin C., <br />
+            who left his career as a machanical engineer to pursue and <br />
+            share his love for food alongside his wife and brother. <br /><br />
+            AltThai strives to serve the community with a welcoming atmosphere and delectable eats. Hope to see you
+            soon!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="media">
+      <div class="media__container">
+        <h2 class="media__title">Great Food Requires Great Friends</h2>
+        <div class="media__wrapper">
+          <iframe
+            width="800"
+            height="450"
+            src="https://www.youtube-nocookie.com/embed/kBBnBF3sOws"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="media__caption">
+          Our recipes are derived from the very best Thai chefs in the world. Check out Pailin Chongchitnant's video for
+          our Pad Thai Inspiration.
+        </p>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__container">
+        <div id="map"></div>
+        <div class="map__text">
+          <h2 class="map__title">Visit Us</h2>
+          <table class="map__hours">
+            <thead>
+              <tr>
+                <th colspan="2">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday - Thursday</td>
+                <td>11:30AM - 9:00PM</td>
+              </tr>
+              <tr>
+                <td>Friday - Saturday</td>
+                <td>11:30AM - 10:00PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>12:00PM - 8:30PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__info">
+        <address class="footer__text">
+          <a href="https://goo.gl/maps/zzc9KWvadBaAdMKS9"
+            >40 S. Arlington Heights Road <br />
+            Arlington Heights, IL 60005</a
+          >
+        </address>
+        <div class="footer__text">
+          <a href="tel:+1 847 797 8442">Tel: (847) 797 8442</a>
+        </div>
+      </div>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/altThai">
+          <i class="fa-brands fa-facebook-square" aria-label="Link to the AltThai Facebook Account"></i>
+        </a>
+        <a href="http://www.yelp.com/biz/altthai-arlington-heights">
+          <i class="fa-brands fa-yelp" aria-label="Link to the AltThai Yelp Page"></i>
+        </a>
+        <a href="http://">
+          <i class="fa-brands fa-instagram" aria-label="Link to the AltThai Instagram Page"></i>
+        </a>
+        <a
+          href="http://www.tripadvisor.com/Restaurant_Review-g29277-d1007965-Reviews-AltThai-Arlington_Heights_Illinois.html"
+        >
+          <img src="./src/tripadvisor.png" alt="Trip Advisor Social Icon" />
+        </a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__text">
+          Want to work with us? <br />
+          Email us at <a href="mailto:careers@altthai.co">careers@altthai.co</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script
+    defer
+    src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="main.js"></script>
+  <script defer src='./parent/parent.js'></script>
+</html>
