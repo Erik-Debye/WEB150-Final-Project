@@ -10,7 +10,11 @@ const nav = document.getElementById('main__nav');
 const navLink = document.querySelectorAll('.nav__link');
 const headerBtn = document.querySelector('.nav__btn');
 
-let sticky = navBar.offsetTop;
+//not always present
+if(navBar){
+  let sticky = navBar.offsetTop;
+}
+
 //create fucntion to run on scroll
 function fixedHeader() {
   //if pixel offset (Y) is more than 10 pixels
@@ -58,8 +62,11 @@ L.marker([42.082070730638286, -87.98075412989978]).addTo(map).bindPopup('The Hom
 //CONTACT PAGE**********************************************************************************************************************************
 
 //This function auto-inserts todays date into the date category
-const today = new Date().toISOString().substring(0, 10);
+//not always present
+if(document.getElementById('date')){
+  const today = new Date().toISOString().substring(0, 10);
 document.getElementById('date').value = today;
+}
 
 //############################################################################################################################
 
