@@ -40,6 +40,9 @@ window.onscroll = function (e) {
   fixedHeader();
 };
 
+//Fixing the z-index problem on homepage. Issue arises because the map uses incredibly high z-values requiring the scroll-bar to also use high numbers. This conflicts with the hamburger navigation on the mobile navigation menu.
+
+
 //MAP
 const map = L.map('map').setView([42.082070730638286, -87.98075412989978], 18);
 

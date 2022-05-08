@@ -10,6 +10,8 @@
 }
 .menu__navs {
   display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
   justify-content: space-evenly;
   width: 80vw;
   margin: 4rem auto 4rem auto;

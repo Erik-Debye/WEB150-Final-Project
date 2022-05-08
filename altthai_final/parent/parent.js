@@ -17,7 +17,12 @@ hamburgerIcon.addEventListener('click', (e) => {
   hamLine2.classList.toggle('change--2');
   hamLine3.classList.toggle('change--3');
 
-  cta.classList.toggle('show');
+  if(cta.style.display = 'flex'){
+    cta.style.display = 'none';
+  } else{
+    cta.style.display = 'flex';
+  }
+ 
   hamNav.classList.toggle('show');
 });
 
