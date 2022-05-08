@@ -21,21 +21,29 @@
 }
 .menu__nav__link {
   text-decoration: none;
-  color: black;
-  font-size: 2.6rem;
+  border-bottom: 0.1rem solid #c5c5c5;
+  color: var(--dark-teal);
+  font-size: 2.8rem;
+  transition: all 0.2s ease-in-out;
 }
-.menu__nav__link::after{
+.menu__nav__link:active,
+.menu__nav__link:hover,
+.menu__nav__linl:focus {
+  border-bottom: transparent;
+}
+.menu__nav__link::after {
   content: '';
   display: block;
   width: 0;
   margin: auto;
   background: black;
-  height: 0.2rem;
-  transition: width 0.25s ease-in-out;
+  height: 0.3rem;
+  z-index: 3;
+  transition: width 0.2s ease-in-out;
 }
-.menu__nav__link::after:active,
-.menu__nav__link::after:hover,
-.menu__nav__link::after:focus{
+.menu__nav__link:active::after,
+.menu__nav__link:hover::after,
+.menu__nav__linl:focus::after {
   width: 100%;
 }
 .menu__container {
@@ -76,7 +84,6 @@ td {
 }
 .item {
   align-items: flex-end;
-  border-bottom: 0.2rem solid var(--default-bg);
   display: flex;
   justify-content: space-between;
   min-height: 15rem;
@@ -86,7 +93,6 @@ td {
 }
 .item--drink {
   align-items: flex-end;
-  border-bottom: 0.2rem solid var(--default-bg);
   display: flex;
   justify-content: space-between;
   padding-left: 2rem;
@@ -96,7 +102,6 @@ td {
 }
 .item--dessert {
   align-items: flex-end;
-  border-bottom: 0.2rem solid var(--default-bg);
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
@@ -106,7 +111,6 @@ td {
 }
 .item__name {
   font-size: 2.6rem;
-  border-bottom: 0.1rem solid rgb(218, 213, 213);
 }
 .item__desc {
   font-size: 1.8rem;
