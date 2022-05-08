@@ -80,7 +80,7 @@
 <section class='contact'>
   <div class="contact__section">
     <div class="contact__col">
-      <h1 class="contact__main">Message Recieved!</h1>
+      <h1 class="contact__main">Message Received!</h1>
       <h3 class="contact__secondary">As promised, we'll get back to you as soon as we can!</h3>
     </div>
     <div class="contact__col">
@@ -91,18 +91,18 @@
       />
     </div>
   </div>
-  <div>
-	  <h2>Submitted Information</h2>
+  <div class='contact__table' >
+	  <h2 class='contact__table__title' >Submitted Information</h2>
       <table>
           <tr>
-            <th>Form value</th>
-            <th>Form name</th>
+            <th class='left col__title'>Form value</th>
+            <th class='left col__title'>Form name</th>
           </tr>
 <?php
 foreach ($_POST as $n => $v) {
   echo "<tr>
-         <th>$n</th>
-          <th>$v</th>
+         <th class='left'>$n</th>
+          <th class='left'>$v</th>
         </tr>";
 }
 ?>
