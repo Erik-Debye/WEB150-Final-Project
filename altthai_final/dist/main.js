@@ -10,11 +10,6 @@ const nav = document.getElementById('main__nav');
 const navLink = document.querySelectorAll('.nav__link');
 const headerBtn = document.querySelector('.nav__btn');
 
-//not always present
-if (navBar) {
-  let sticky = navBar.offsetTop;
-}
-
 //create fucntion to run on scroll
 function fixedHeader() {
   //if pixel offset (Y) is more than 10 pixels
@@ -43,7 +38,11 @@ function fixedHeader() {
 //Call function on scroll
 window.onscroll = function (e) {
   e.preventDefault();
-  fixedHeader();
+  //not always present
+  if (navBar) {
+    let sticky = navBar.offsetTop;
+    fixedHeader();
+  }
 };
 
 //##########################################################################################################################
