@@ -1,0 +1,208 @@
+/*Header + Nav*/
+.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.8) 100%),
+    url('../dist/img/header--img.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/*Main text*/
+.header__titles {
+  margin: 0 auto;
+  height: fit-content;
+  width: 75vw;
+  text-align: center;
+  color: var(--default-bg);
+}
+.header__main {
+  font-size: clamp(3.8rem, 5vw, 10rem);
+  letter-spacing: 1.4rem;
+}
+.header__secondary {
+  font-size: clamp(2.4rem, 3vw, 6rem);
+}
+/*Buttons*/
+.header__btn {
+  display: flex;
+  background-color: transparent;
+  color: var(--default-bg);
+  margin: 2.5rem auto;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  border: solid 0.1rem var(--default-bg);
+  font-size: clamp(1.6rem, 1.5vw, 2.8rem);
+  font-family: var(--para-ft);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  transition: all 0.25s ease-in-out;
+}
+.header__btn:active,
+.header__btn:focus,
+.header__btn:hover {
+  border: solid 0.1rem var(--logo-orange);
+  color: var(--logo-orange);
+}
+.header__link {
+  color: var(--default-bg);
+  font-size: clamp(1.6rem, 1.5vw, 2.8rem);
+  font-family: var(--para-ft);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  border-bottom: 0.2rem solid transparent;
+  padding: 0.5rem;
+  margin: -0.6rem;
+  transition: all 0.25s ease-in-out;
+}
+.header__link:active,
+.header__link:focus,
+.header__link:hover {
+  color: var(--logo-orange);
+}
+#header__btn--2 {
+  display: none;
+}
+/*Tagline (address + phone)*/
+.header__tertiary {
+  color: var(--default-bg);
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  margin: 0 auto;
+  text-align: center;
+  width: 75vw;
+}
+/*About Section*/
+.about {
+  background-color: var(--default-bg);
+  padding: 5rem 0;
+  text-align: center;
+}
+.about__container {
+  align-items: center;
+  display: flex;
+  font-family: var(--para-ft);
+  font-size: clamp(1.8rem, 1vw, 2.2rem);
+  height: 85%;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 5rem;
+  width: 85%;
+}
+.about__main {
+  font-family: var(--header-ft);
+  font-size: clamp(2rem, 3vw, 6rem);
+  margin: 2rem auto;
+}
+.about__col {
+  height: min-content;
+}
+.about__figure--image {
+  width: clamp(80%, 10vw, 100%);
+  height: auto;
+}
+.about__figure--caption {
+  font-size: clamp(2rem, 2vw, 2.6rem);
+}
+/*MEDIA SECTION*/
+.media {
+  background-color: var(--default-bg);
+  text-align: center;
+}
+.media_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.media__title {
+  font-family: var(--header-ft);
+  font-size: clamp(2rem, 3vw, 6rem);
+  letter-spacing: 0.5rem;
+  padding: 2.5rem 0;
+}
+.media__caption {
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  margin: auto;
+  padding: 2.5rem;
+  width: 50%;
+}
+/*MAP*/
+.map__container {
+  align-items: center;
+  display: flex;
+  font-family: var(--para-ft);
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+  height: 85%;
+  justify-content: space-around;
+  margin: auto;
+  padding-bottom: clamp(1.5rem, 3vw, 5rem);
+  padding-top: clamp(3rem, 5vw, 10rem);
+}
+#map {
+  height: clamp(40rem, 35vw, 60rem);
+  width: clamp(45rem, 50vw, 90vw);
+}
+.map__text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.map__title {
+  font-family: var(--header-ft);
+  font-size: clamp(2rem, 3vw, 6rem);
+  letter-spacing: 0.5rem;
+}
+.map__hours {
+  border-collapse: separate;
+  border-spacing: 4rem;
+  font-family: var(--para-ft);
+  font-size: clamp(1.8rem, 2vw, 2.8rem);
+}
+th {
+  font-family: var(--header-ft);
+  font-size: clamp(2rem, 3vw, 6rem);
+  letter-spacing: 0.2rem;
+}
+div.leaflet-popup-content {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about {
+    padding: 3rem 0;
+  }
+  iframe {
+    width: 64rem;
+    height: 36rem;
+  }
+  .map__container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*INSERT HAMBURGER*/
+  #header__btn--2 {
+    display: flex;
+  }
+  .about__container {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+  iframe {
+    width: 48rem;
+    height: 27rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #map {
+    height: 25rem;
+    width: 75vw;
+  }
+  iframe {
+    width: 24rem;
+    height: 16rem;
+  }
+}
