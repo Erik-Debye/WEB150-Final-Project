@@ -163,7 +163,7 @@
 }
 th {
   font-family: var(--header-ft);
-  font-size: clamp(2.2rem, 1vw, 2.8rem);
+  font-size: clamp(2rem, 3vw, 6rem);
   letter-spacing: 0.2rem;
 }
 div.leaflet-popup-content {
