@@ -347,12 +347,25 @@ form * {
   .header__btn {
     display: flex;
   }
-
   /*Reframe footer*/
   .footer {
     gap: 2.5rem;
     height: min-content;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .nav__bar {
+    align-items: center;
+  }
+  .header__bar--alt{
+    align-items: center;
+  }
+  .nav__link {
+    margin-top: 0;
+  }
+  .hamburger {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 325px) {
