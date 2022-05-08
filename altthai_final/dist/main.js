@@ -11,7 +11,7 @@ const navLink = document.querySelectorAll('.nav__link');
 const headerBtn = document.querySelector('.nav__btn');
 
 //not always present
-if(navBar){
+if (navBar) {
   let sticky = navBar.offsetTop;
 }
 
@@ -63,9 +63,9 @@ L.marker([42.082070730638286, -87.98075412989978]).addTo(map).bindPopup('The Hom
 
 //This function auto-inserts todays date into the date category
 //not always present
-if(document.getElementById('date')){
+if (document.getElementById('date')) {
   const today = new Date().toISOString().substring(0, 10);
-document.getElementById('date').value = today;
+  document.getElementById('date').value = today;
 }
 
 //############################################################################################################################
@@ -113,6 +113,7 @@ function resizeCheck(e) {
     hamLine1.classList.toggle('change--1');
     hamLine2.classList.toggle('change--2');
     hamLine3.classList.toggle('change--3');
+    cta.style.display = 'flex';
     hamNav.classList.toggle('show');
   }
 }
