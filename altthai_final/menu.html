@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta Data-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS (Normally Bundled)-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <!--FONTS-->
+    <script src="https://kit.fontawesome.com/fd19f12e7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+    <!--FAVICONS-->
+    <link rel="shortcut icon" href="./dist/favicons/favicon.ico" />
+    <link rel="icon" sizes="16x16" href="./dist/favicons/favicon-16x16.png" />
+    <link rel="icon" sizes="32x32" href="./dist/favicons/favicon-32x32.png" />
+    <link rel="icon" sizes="192x192" href="./dist/favicons/android-chrome-192x192.png" />
+    <link rel="icon" sizes="512x512" href="./dist/favicons/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./dist/favicons/apple-touch-icon.png" />
+    <!--Title & Desc-->
+    <title>Altthai - Arlington Heights Menu Page</title>
+    <meta name="description" content="The Menu page for AltThai - a local Arlington Heights, IL restaurant">
+  </head>
+  <body>
+    <header class="header__bar--alt">
+      <!--LOGO & Buttons -->
+      <a href="./index.html">
+        <img
+          src="./dist/img/Logo_white--400w.png"
+          alt="AltThai Logo"
+          class="nav__bar__logo--alt"
+          aria-roledescription="Link to Homepage"
+        />
+      </a>
+      <nav id="main__nav">
+        <div class="link__group">
+          <a href="./gallery.html" class="nav__link nav__link__underline">Gallery</a>
+          <a href="./about.html" class="nav__link nav__link__underline">About</a>
+          <a href="./contact.html" class="nav__link nav__link__underline">Contact</a>
+        </div>
+        <div class="cta__group">
+          <a href="./menu.html" class="nav__link cta__color">Menu</a>
+          <button id="nav__btn" class="nav__btn cta__color cta__color--2" type="button">
+            <a
+              id="nav__link"
+              href="https://www.toasttab.com/altthai/v2/online-order#!/"
+              class="nav__btn--link"
+              >Order Online</a
+            >
+          </button>
+        </div>
+        <div class="hamburger">
+          <div class="line line--1"></div>
+          <div class="line line--2"></div>
+          <div class="line line--3"></div>
+        </div>
+        </div> 
+      </nav>
+      <nav class="ham__nav">
+          <div class="ham__link__group">
+            <a href="./gallery.html" class="ham__nav__link nav__link__underline">Gallery</a>
+            <a href="./about.html" class="ham__nav__link nav__link__underline">About</a>
+            <a href="./contact.html" class="ham__nav__link nav__link__underline">Contact</a>
+          </div>
+          <div class="ham__cta__group">
+            <a href="./menu.html" class="nav__link cta__color">Menu</a>
+            <button class="nav__btn cta__color cta__color--2" type="button">
+              <a
+                id="nav__link"
+                href="https://www.toasttab.com/altthai/v2/online-order#!/"
+                class="nav__btn--link"
+                >Order Online</a
+              >
+            </button>
+      </nav>
+    </header>
+    <section  class='menu'>
+      <h2 class="menu__title">Menu</h2>
+
+      <!--Link groups-->
+      <ul id='top' class="menu__navs" aria-roledescription='Food & Drink Menu Navigation'>
+          <li class="menu__nav__item"><a href="#apps" class='menu__nav__link'>Appetizers</a></li>
+          <li class="menu__nav__item"><a href="#salad" class="menu__nav__link">Salads</a></li>
+          <li class="menu__nav__item"><a href="#wrap" class="menu__nav__link">Thai Wraps</a></li>
+          <li class="menu__nav__item"><a href="#soup" class="menu__nav__link">Soups</a></li>
+          <li class="menu__nav__item"><a href="#chef" class="menu__nav__link">Specialties</a></li>
+          <li class="menu__nav__item"><a href="#rice" class="menu__nav__link">Rice Dishes</a></li>
+          <li class="menu__nav__item"><a href="#curries" class="menu__nav__link">Curries</a></li>
+          <li class="menu__nav__item"><a href="#friedrice" class="menu__nav__link">Fried Rices</a></li>
+          <li class="menu__nav__item"><a href="#noodles" class="menu__nav__link">Noodles</a></li>
+          <li class="menu__nav__item"><a href="#desserts" class="menu__nav__link">Desserts</a></li>
+          <li class="menu__nav__item"><a href="#drinks" class="menu__nav__link">Drinks</a></li>
+      </ul>
+
+      <h3 id='apps' class='menu__category'>Appetizers</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Egg Rolls (3)</span> <br> <span class="item__desc">Glass noodles, shredded carrots, cabbage with sweet sauce</span></td>
+                <td class='item__price'>$6.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pot Stickers (6)</span> <br> <span class="item__desc">With sweet ginger sauce</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Crab Rangoon (5)</span> <br> <span class="item__desc">Imitation crab, cream cheese, carrot, celery, with sweet & sour sauce</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Thai Sausage</span> <br> <span class="item__desc">Pork sausage served with fresh ginger and red onion</span></td>
+                <td class='item__price'>$9.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Grilled Pork Loin on Skewers (4)</span> <br> <span class="item__desc">With spicy sauce</span></td>
+                <td class='item__price'>$9.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Satay (4)</span> <br> <span class="item__desc">With Thai peanut sauce and cucumber salad</span></td>
+                <td class='item__price'>$8.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Chicken Tempura</span> <br> <span class="item__desc">Crispy chicken strips with sweet sauce</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Fried/Steamed Tofu</span> <br> <span class="item__desc">With sweet & sour sauce and crushed peanut</span></td>
+                <td class='item__price'>$6.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Shrimp Tempura</span> <br> <span class="item__desc">Crispy shrimp served with cucumber salad and sweet sauce</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Dim Sum Set (6)</span> <br> <span class="item__desc">Steamed shrimp dumplings (2), shrimp noodle rolls (2) and shrimp wantons (2) with ginger sauce</span></td>
+                <td class='item__price'>$9.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Shrimp Dumplings (4)</span> <br> <span class="item__desc">With sweet ginger sauce</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Calamari Rings</span> <br> <span class="item__desc">With spicy mayo sauce</span></td>
+                <td class='item__price'>$10.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Coconut Breaded Shrimp (4)</span> <br> <span class="item__desc">With cucumber salad and sweet and sour sauce</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Big Plate</span> <br> <span class="item__desc">Fresh Asparagus and Shrimp Rolls, Crispy Salmon Rolls, Coconut Breaded Shrimp, Shrimp Dumplings, Pork on Skewers and Chicken Satay</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Crispy Plate</span> <br> <span class="item__desc">Crispy Salmon Rolls, Coconut Breaded Shrimp, Crab Rangoon, Pot Stickers and Egg Rolls</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Vegetarian Plate</span> <br> <span class="item__desc">Fresh Tofu Rolls, Fresh Spring Rolls, Tofu Satay, Veg. Pot Stickers and Veg. Egg Rolls</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+      
+      <h3 id='salad' class='menu__category'>Salads</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Cucumber Salad</span> <br> <span class="item__desc">Cucumbers, cherry tomatoes, red onions, carrots, beets, lettuce, with cucumber dressing</span></td>
+                <td class='item__price'>$7.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Crispy Tilapia Salad</span> <br> <span class="item__desc">Garlic, lemon glass, green apples, red bell peppers, onions, cilantro, lime, fresh spring mixes</span></td>
+                <td class='item__price'>$15.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Papaya Salad</span> <br> <span class="item__desc">Shrimp, green papaya, shrimp, tomatoes, garlic, peanuts, green beans, lime, fresh spring mixes</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Beef Salad</span> <br> <span class="item__desc">Basil leaves, onions, cucumbers, tomatoes, cilantro, toasted ground rice, fresh spring mixes</span></td>
+                <td class='item__price'>$15.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Glass Noodle Salad</span> <br> <span class="item__desc">Shrimp, minced chicken, red bell ., tomatoes, onions, peanuts, cilantro, lime, fresh spring mixes</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Chicken Salad</span> <br> <span class="item__desc">Dried hot peppers, onions, gingers, cilantro, peanuts, lime, toasted ground rice, fresh spring mixes</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+
+      <h3 id='wrap' class='menu__category'>Thai Wrap/Fresh Rolls</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Thai Wrap (Miang Kham)</span> <br> <span class="item__desc">Lettuce, roasted coconut flake, sun-dried shrimp, peanuts, ginger, lime, Thai hot pepper, with sweet & tangy tamarind sauce</span></td>
+                <td class='item__price'>$9.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Spring Rolls</span> <br> <span class="item__desc">Cucumbers, bean sprouts, carrots, beets, and tofu with plum sauce</span></td>
+                <td class='item__price'>$7.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Spicy Duck Rolls</span> <br> <span class="item__desc">Cilantro, beets, cucumbers, carrots, lettuce and jalapeños with sweet ginger sauce</span></td>
+                <td class='item__price'>$11.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Asparagus Rolls</span> <br> <span class="item__desc">Shrimp, asparagus, carrots, beets and lettuce with spicy garlic sauce</span></td>
+                <td class='item__price'>$10.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Chicken Tempura Rolls</span> <br> <span class="item__desc">Cucumber, beets, carrots, red cabbages, lettuce and cilantro with sweet chili sauce</span></td>
+                <td class='item__price'>$10.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Shrimp Rolls</span> <br> <span class="item__desc">Shrimp, carrots, beets, bean sprouts, red cabbage, lettuce and rice noodles with peanut plum sauce</span></td>
+                <td class='item__price'>$10.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Tofu Rolls</span> <br> <span class="item__desc">Tofu, carrots, beets, bean sprouts, red cabbage, lettuce and rice noodles with peanut plum sauce</span></td>
+                <td class='item__price'>$10.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>    
+      
+      <h3 id='soup' class='menu__category'>Soups</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Small Tom Yum</span> <br> <span class="item__desc">Lime juice, lemon grass, kaffir lime leaves, mushrooms, tomatoes, green onions, cilantro</span></td>
+                <td class='item__price'>$6.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Large Tom Yum</span> <br> <span class="item__desc">Lime juice, lemon grass, kaffir lime leaves, mushrooms, tomatoes, green onions, cilantro</span></td>
+                <td class='item__price'>$12.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Small Tom Kha</span> <br> <span class="item__desc">Coconut milk, lime juice, mushrooms, cilantro, green onions</span></td>
+                <td class='item__price'>$6.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Large Tom Kha</span> <br> <span class="item__desc">Coconut milk, lime juice, mushrooms, cilantro, green onions</span></td>
+                <td class='item__price'>$12.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Noodle Soup</span> <br> <span class="item__desc">BBQ pork or duck, bean sprouts, lettuce, green onions and cilantro</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Small Wonton Soup</span> <br> <span class="item__desc">Chicken dumplings, BBQ pork, bean sprouts, green onions, cilantro, lettuce</span></td>
+                <td class='item__price'>$6.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Large Wonton Soup</span> <br> <span class="item__desc">Chicken dumplings, BBQ pork, bean sprouts, green onions, cilantro, lettuce</span></td>
+                <td class='item__price'>$12.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Small Spinach Soup</span> <br> <span class="item__desc">Spinach, mushrooms, green onions</span></td>
+                <td class='item__price'>$6.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Large Spinach Soup</span> <br> <span class="item__desc">Spinach, mushrooms, green onions</span></td>
+                <td class='item__price'>$11.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>    
+
+      <h3 id='chef' class='menu__category'>Chef's Special's</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Basil Duck</span> <br> <span class="item__desc">Basil leaves, jalapenos, bell peppers, bamboo shoots, onion, peapods, carrots</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Lamb Massamun Curry</span> <br> <span class="item__desc">Peanuts, potatoes, onions with cucumber salad</span></td>
+                <td class='item__price'>$18.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Spicy Catfish</span> <br> <span class="item__desc">Coconut milk, kaffir lime leaves, basil leaves, green beans, bamboo shoots, bell peppers, jalapenos and eggplants</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pad Kee Mao with Seafood</span> <br> <span class="item__desc">Wide noodle, shrimp, scallops, calamari, mussels, basil leaves, bell peppers, bamboo shoots, tomatoes, carrots, bean sprouts, broccoli, onions, and jalapenos</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Spicy Seafood Noodles</span> <br> <span class="item__desc">Shrimp, scallops, calamari, mussels, egg noodles, basil leaves, peapods, red bell peppers, jalapenos in sweet chili paste</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Crispy Basil Salmon</span> <br> <span class="item__desc">Basil leaves, jalapenos, bell peppers, bamboo shoots, peapods, peas, carrots</span></td>
+                <td class='item__price'>$19.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Crispy Basil Scallops</span> <br> <span class="item__desc">Basil leaves, jalapenos, bell peppers, bamboo shoots, peapod, peas, carrots</span></td>
+                <td class='item__price'>$22.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Tilapia Panang</span> <br> <span class="item__desc">Coconut milk, basil leaves, kaffir lime leaves, bell peppers</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Scallops with Sweet Chili Sauce</span> <br> <span class="item__desc">Basil leaves, red bell peppers, bamboo shoots</span></td>
+                <td class='item__price'>$22.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Hawaiian Chicken</span> <br> <span class="item__desc">Tempura chicken, pineapple, bell peppers, jalapenos, onions, tomatoes carrots, green onions and peapod in sweet chili sauce</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Grilled Salmon with Teriyaki Sauce</span> <br> <span class="item__desc">Served with grilled asparagus and fresh spring mixes</span></td>
+                <td class='item__price'>$19.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Garlic Scallops</span> <br> <span class="item__desc">Mushrooms, garlic, black pepper, steamed asparagus, cucumbers, fresh spring mixes</span></td>
+                <td class='item__price'>$22.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Grilled Lamb (4-5 ribs)</span> <br> <span class="item__desc">Marinated lamb with garlic served with grilled asparagus and fresh spring mixes</span></td>
+                <td class='item__price'>$28.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Rama Chicken</span> <br> <span class="item__desc">Broccoli, carrots, peapods, peanut sauce</span></td>
+                <td class='item__price'>$14.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Rama Tofu</span> <br> <span class="item__desc">Broccoli, carrots, peapods, peanut sauce</span></td>
+                <td class='item__price'>$14.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Shrimp with Glass Noodles</span> <br> <span class="item__desc">Bacon, ginger, mushrooms, peapods, bell peppers, carrots, cilantro, onions</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Deep Fried Fillet Red Snapper</span> <br> <span class="item__desc">Bell peppers, garlic, onions, sweet and sour sauce</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pineapple Curry</span> <br> <span class="item__desc">Choice of boneless roasted duck or shrimp, coconut milk, cherry tomatoes, pineapple, bell peppers, Thai basil leaves</span></td>
+                <td class='item__price'>$17.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Stir Fried Asparagus and Shrimp</span> <br> <span class="item__desc">Asparagus, shrimp, peapods, carrots</span></td>
+                <td class='item__price'>$18.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Caribbean Fried Rice</span> <br> <span class="item__desc">Shrimp, calamari, scallops, mussels, raisin, onions, peas, carrots, pineapple, egg</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Blue Crab Fried Rice</span> <br> <span class="item__desc">Blue crab, spinach, peas, carrots, egg, green onion, cilantro, served with fresh cucumber</span></td>
+                <td class='item__price'>$25.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pad Thai with Shrimp</span> <br> <span class="item__desc">Thin noodle, tofu, bean sprouts, onions, egg, cabbage, lime and crushed peanuts</span></td>
+                <td class='item__price'>$16.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pad Si-Ew with Shrimp</span> <br> <span class="item__desc">Sweet soy sauce, wide noodles, broccoli, carrots, peapod, egg</span></td>
+                <td class='item__price'>$16.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Beef & Broccoli</span> <br> <span class="item__desc">Broccoli and carrots</span></td>
+                <td class='item__price'>$25.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>    
+
+      <h3 id='rice' class='menu__category'>Rice Dishes</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Ginger Dish</span> <br> <span class="item__desc">Ginger, celery, hot peppers, onions, mushrooms, bell peppers, and carrots</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Cashew Dish</span> <br> <span class="item__desc">Cashew nuts, carrots, onions, peapod, pineapple, bell peppers, and jalapenos</span></td>
+                <td class='item__price'>$14.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Basil Dish</span> <br> <span class="item__desc">Basil leaves, bell peppers, onions, bamboo shoots, carrots and jalapenos</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Mixed Vegetables Dish</span> <br> <span class="item__desc">Peapod, broccoli, onions, mushrooms, carrots, bean sprouts, bell peppers, tomatoes, and Napa cabbage</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Sweet and Sour Dish</span> <br> <span class="item__desc">Cucumbers, onions, tomatoes, pineapple, bell peppers, and carrots</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Garlic Dish</span> <br> <span class="item__desc">Black pepper, garlic sauce, served with fresh cucumber, shredded carrot, green onion, and lettuce</span></td>
+                <td class='item__price'>$14.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>  
+
+      <h3 id='curries' class='menu__category'>Curries</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Panang Curry</span> <br> <span class="item__desc">Basil leaves, bell peppers, eggplants and kaffir lime leaves</span></td>
+                <td class='item__price'>$13.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Red Curry</span> <br> <span class="item__desc">Basil leaves, bamboo shoots, bell peppers, eggplants and kaffir lime leaves</span></td>
+                <td class='item__price'>$13.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Green Curry</span> <br> <span class="item__desc">Basil leaves, bamboo shoots, bell peppers, eggplants, kaffir lime leaves</span></td>
+                <td class='item__price'>$13.50</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Massaman Curry</span> <br> <span class="item__desc">Peanuts, potatoes and onions</span></td>
+                <td class='item__price'>$13.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Pineapple Curry</span> <br> <span class="item__desc">Choice of boneless roasted duck or shrimp, coconut milk, cherry tomatoes, pineapple, bell peppers, Thai basil leaves</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Lamb Massamun Curry</span> <br> <span class="item__desc">Peanuts, potatoes, onions with cucumber salad</span></td>
+                <td class='item__price'>$18.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>  
+
+      <h3 id='friedrice' class='menu__category'>Fried Rices</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Thai Fried Rice</span> <br> <span class="item__desc">Carrots, peas, onions, egg, served with fresh cucumber, green onion, cilantro</span></td>
+                <td class='item__price'>$12.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Curry Fried Rice</span> <br> <span class="item__desc">Onions, peas, carrots, egg, served with fresh cucumber, green onion, cilantro</span></td>
+                <td class='item__price'>$12.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Basil Fried Rice</span> <br> <span class="item__desc">Basil leaves, mushrooms, bell peppers, broccoli, carrots, onions, jalapenos, egg, served with fresh cucumber, green onion, cilantro</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Blue Crab Fried Rice</span> <br> <span class="item__desc">Blue crab, spinach, peas, carrots, egg, green onion, cilantro, served with fresh cucumber</span></td>
+                <td class='item__price'>$25.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Caribbean Fried Rice</span> <br> <span class="item__desc">Shrimp, calamari, scallops, mussels, raisin, onions, peas, carrots, pineapple, egg</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>  
+
+      <h3 id='noodles' class='menu__category'>Noodles</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Pad Thai</span> <br> <span class="item__desc">Thin noodle, tofu, bean sprouts, onions, egg, cabbage, lime and crushed peanuts</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pad Kee Mao</span> <br> <span class="item__desc">Wide noodle, basil leaves, bell peppers, tomatoes, carrots, bean sprouts, bamboo shoots, broccoli, onions, and jalapenos</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item'>
+                <td><span class='item__name'>Lard Nar</span> <br> <span class="item__desc">Wide noodle, broccoli, carrots, peapod, mushrooms, light brown gravy</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pad See Ew</span> <br> <span class="item__desc">Sweet soy sauce, wide noodles, broccoli, carrots, peapod, egg</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Pad Woon Sen</span> <br> <span class="item__desc">Glass noodles, broccoli, carrots, peapod, onions, bean sprouts, mushrooms, egg</span></td>
+                <td class='item__price'>$13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item'>
+                <td><span class='item__name'>Spicy Seafood Noodles</span> <br> <span class="item__desc">Shrimp, scallops, calamari, mussels, egg noodles, basil leaves, peapods, red bell peppers, jalapenos in sweet chili paste</span></td>
+                <td class='item__price'>$20.00</td>
+              </tr>
+              <tr class='item'>
+                <td><span class='item__name'>Basil Noodles</span> <br> <span class="item__desc">Wide rice noodles, basil , mushrooms, broccoli, carrots, bell peppers, jalapenos, bamboo shoots, onions</span></td>
+                <td class='item__price'>$14.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+
+      <h3 id='desserts' class='menu__category'>Desserts</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Taro Custard</span> <br> </td>
+                <td class='item__price'>$3.50</td>
+              </tr>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Mango w/Sweet Sticky Rice</span> <br></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Key Lime Pie</span> <br></td>
+                <td class='item__price'>$4.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Sweet Sticky Rice w/Sherbert
+                </span> <br> <span class="item__desc">Lychee or Mango</span> </td>
+                <td class='item__price'>$6.00</td>
+              </tr>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Sweet Sticky Rice w/Ice Cream</span> <br> <span class="item__desc">Green tea, strawberry or vanilla</span></td>
+                <td class='item__price'>$6.00</td>
+              </tr>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Sherbet</span> <br> <span class="item__desc">Lychee or Mango</span> </td>
+                <td class='item__price'>$4.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Ice Cream</span> <br> <span class="item__desc">Green tea, strawberry or vanilla</span></td>
+                <td class='item__price'>$3.50</td>
+              </tr>
+              <tr class='item--dessert'>
+                <td><span class='item__name'>Deep Fried Ice Cream</span> <br> <span class="item__desc">Green tea, strawberry or vanilla</span></td>
+                <td class='item__price'>$7.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+
+      <h3 id='drinks' class='menu__category'>Drinks</h3>
+      <div class="menu__container">
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item--drink'>
+                <td><span class='item__name'>San Pellegrino Sparkling</span> <br> </td>
+                <td class='item__price'>$4.00</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Coconut Juice</span> <br></td>
+                <td class='item__price'>$3.50</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Soda</span> <br> <span class="item__desc">Coke, Diet Coke, or Sprite</span></td>
+                <td class='item__price'>$2.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <div class="menu__col">
+          <table class="menu__table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>   
+            <tbody class="table__items">
+              <tr class='item--drink'>
+                <td><span class='item__name'>Thai Iced Tea</span> <br> </td>
+                <td class='item__price'>$3.75</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Thai Iced Coffee</span> <br> </td>
+                <td class='item__price'>$3.75</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Lemonade</span> <br> </td>
+                <td class='item__price'>$3.50</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Green Tea</span> <br> </td>
+                <td class='item__price'>$3.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="menu__col">
+          <table class="menu__table"> 
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class='table__items'>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Lemon Iced Tea</span> <br> </td>
+                <td class='item__price'>$3.00</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Hot Tea</span> <br> </td>
+                <td class='item__price'>$2.50</td>
+              </tr>
+              <tr class='item--drink'>
+                <td><span class='item__name'>Mango Nectar</span> <br> </td>
+                <td class='item__price'>$3.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+      </div>    
+      <ul id='top' class="menu__navs" aria-roledescription='Food & Drink Menu Navigation'>
+        <li class="menu__nav__item"><a href="#top" class="menu__nav__link">Return to Top of Page</a></li>
+    </ul>
+    </section>
+    <footer class="footer">
+      <div class="footer__info">
+        <address class="footer__text">
+          <a href="https://goo.gl/maps/zzc9KWvadBaAdMKS9"
+            >40 S. Arlington Heights Road <br />
+            Arlington Heights, IL 60005</a
+          >
+        </address>
+        <div class="footer__text">
+          <a href="tel:+1 847 797 8442">Tel: (847) 797 8442</a>
+        </div>
+      </div>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/altThai">
+          <i class="fa-brands fa-facebook-square" aria-label="Link to the AltThai Facebook Account"></i>
+        </a>
+        <a href="http://www.yelp.com/biz/altthai-arlington-heights">
+          <i class="fa-brands fa-yelp" aria-label="Link to the AltThai Yelp Page"></i>
+        </a>
+        <a href="http://">
+          <i class="fa-brands fa-instagram" aria-label="Link to the AltThai Instagram Page"></i>
+        </a>
+        <a
+          href="http://www.tripadvisor.com/Restaurant_Review-g29277-d1007965-Reviews-AltThai-Arlington_Heights_Illinois.html"
+        >
+          <img src="./dist/img/tripadvisor.png" alt="Trip Advisor Social Icon" />
+        </a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__text">
+          Want to work with us? <br />
+          Email us at <a href="mailto:careers@altthai.co">careers@altthai.co</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./dist/main.js"></script>
+</html>

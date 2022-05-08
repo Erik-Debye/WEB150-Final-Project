@@ -1,0 +1,375 @@
+/*Parent styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /*Reset padding + margins for browser compatibility*/
+  padding: 0;
+}
+:root {
+  /*Colors*/
+  --logo-orange: #e9872f;
+  --logo-green: #8cdb53;
+  --dark-teal: #023c40;
+  --default-bg: #faf1ee;
+  --cta2-blue: #372ac6;
+  /*Fonts*/
+  --header-ft: 'tomatoes', 'Helvetica', sans-serif;
+  --para-ft: 'Lora', 'Times New Roman', serif;
+}
+.alt {
+  color: var(--logo-orange);
+}
+.thai {
+  color: var(--logo-green);
+}
+/*Define Custom Font*/
+@font-face {
+  font-family: tomatoes;
+  src: url(../src/Tomatoes-O8L8.ttf);
+}
+html {
+  /* 62.5% of browser set font size*/
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--default-bg);
+}
+/*Default Text Settings*/
+h1 {
+  font-family: var(--header-ft);
+}
+h2 {
+  font-family: var(--para-ft);
+}
+h3 {
+  font-family: var(--para-ft);
+}
+p {
+  font-family: var(--para-ft);
+}
+/*Header + Nav*/
+.header {
+  padding-bottom: clamp(0rem, 10vw, 15rem);
+}
+.nav__bar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+/*nav__bar upon scrolling*/
+.on-scroll--bar {
+  background-color: rgb(2, 60, 64, 0.8);
+  height: 10rem;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /*Leaflet map has some questionable z-indexes*/
+  z-index: 2000;
+}
+.nav__bar__logo {
+  height: clamp(8rem, 18vw, 30rem);
+  padding-top: clamp(0.1rem, 1vw, 1.5rem);
+  padding-left: clamp(0.1rem, 1vw, 1.5rem);
+  align-self: center;
+}
+/*logo upon scrolling*/
+.on-scroll--logo {
+  height: 8rem;
+  padding: 1.5rem 0rem 0rem 1rem;
+}
+nav {
+  height: min-content;
+  width: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: clamp(2rem, 2vw, 5rem);
+  padding-right: clamp(0.1rem, 1vw, 1.5rem);
+}
+/*Nav element on scroll*/
+.on-scroll--nav {
+  height: 100%;
+  align-items: center;
+}
+.link__group {
+  display: flex;
+  gap: clamp(1rem, 1vw, 2.5rem);
+}
+.cta__group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: clamp(1rem, 1vw, 2.5rem);
+}
+.nav__link {
+  color: var(--default-bg);
+  font-size: clamp(1.6rem, 1.5vw, 2.8rem);
+  font-family: var(--para-ft);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  border-bottom: 0.2rem solid transparent;
+  padding: 0.5rem;
+  margin-top: clamp(1.5rem, 0.5vw, 3rem);
+}
+/*nav link upon scrolling*/
+.on-scroll--link {
+  margin-top: 1.5rem;
+}
+/*Underline animation on nav links*/
+.nav__link__underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin: auto;
+  background: var(--default-bg);
+  height: 0.2rem;
+  transition: width 0.25s ease-in-out;
+}
+.nav__link__underline:active::after,
+.nav__link__underline:focus::after,
+.nav__link__underline:hover::after {
+  width: 100%;
+}
+/*nav link cta color change animation*/
+.cta__color {
+  margin-left: clamp(0rem, 0vw, 5rem);
+  border: solid 0.1rem var(--default-bg);
+  border-radius: 0.8rem;
+  transition: all 0.25s ease-in-out;
+  height: fit-content;
+}
+.cta__color:active,
+.cta__color:focus,
+.cta__color:hover {
+  border: solid 0.1rem var(--logo-green);
+  color: var(--logo-green);
+}
+.nav__btn {
+  background-color: transparent;
+  color: var(--default-bg);
+  padding: 0.5rem;
+  font-size: clamp(1.6rem, 1.5vw, 2.8rem);
+  font-family: var(--para-ft);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  margin-top: clamp(1.5rem, 0.5vw, 3rem);
+}
+/*Class that gives link within button color animation (nav-- order online*/
+.nav__btn--link {
+  text-decoration: none;
+  color: var(--default-bg);
+  padding: 0.6rem;
+  margin: 0.6rem;
+  font-size: clamp(1.6rem, 1.5vw, 2.8rem);
+  transition: all 0.25s ease-in-out;
+}
+.nav__btn--link:active,
+.nav__btn--link:focus,
+.nav__btn--link:hover {
+  color: var(--logo-orange);
+}
+/*nav__btn upon scrolling*/
+.on-sroll--btn {
+  margin-top: 1.5rem;
+  height: min-content;
+}
+/*Nav__btn color animation*/
+.cta__color--2 {
+  border: solid 0.1rem var(--default-bg);
+  margin-left: 0;
+  transition: all 0.25s ease-in-out;
+}
+.cta__color--2:active,
+.cta__color--2:focus,
+.cta__color--2:hover {
+  border: solid 0.1rem var(--logo-orange);
+  color: var(--logo-orange);
+}
+/*ALT HEADER (Non-scroll header -- merges non-scroll and scroll design)*/
+.header__bar--alt {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(2, 60, 64);
+  height: 10rem;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+.nav__bar__logo--alt {
+  height: clamp(4rem, 30vw, 8rem);
+  padding: 1.5rem 0rem 0rem 1rem;
+  align-self: center;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: clamp(1.5rem, 0.5vw, 3rem);
+  margin-right: clamp(0.5rem, 0.75rem, 1rem);
+  width: 3.5rem;
+  height: 3rem;
+  cursor: pointer;
+  z-index: 1996;
+}
+/*Nav parent cont*/
+.ham__nav {
+  background-color: #2e5f63;
+  width: clamp(14rem, 50vw, 22rem);
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.25s ease-in-out;
+  z-index: 1994;
+}
+.show {
+  display: flex;
+}
+.ham__cta__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.ham__link__group {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(10rem, 2vw, 10rem);
+}
+.ham__nav__link {
+  color: var(--default-bg);
+  font-size: clamp(1.8rem, 1.5vw, 2.8rem);
+  font-family: var(--para-ft);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  border-bottom: 0.2rem solid transparent;
+  padding: 0.5rem;
+  margin-top: clamp(1.5rem, 0.5vw, 3rem);
+}
+.line {
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--default-bg);
+  transform: none;
+  transition: all 0.25s ease-in-out;
+}
+.change--1 {
+  transform: translateY(0.7rem) rotateZ(45deg);
+}
+.change--2 {
+  display: none;
+}
+.change--3 {
+  transform: translateY(-0.8rem) rotateZ(-45deg);
+}
+/*footer*/
+.footer {
+  height: 15vh;
+  width: 100vw;
+  background-color: var(--dark-teal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(1.5rem, 3vw, 5rem);
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+address {
+  padding-bottom: 2.5rem;
+}
+form * {
+  font-family: var(--para-ft);
+}
+.footer__socials {
+  height: 100%;
+  display: flex;
+  color: var(--default-bg);
+  font-size: 2.4rem;
+  width: min-content;
+  margin: auto;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer__socials i {
+  font-size: 4rem;
+  color: var(--default-bg);
+}
+.footer__socials img {
+  height: 5.5rem;
+  margin-top: 0.5rem;
+  margin-left: -0.5rem;
+  width: auto;
+}
+.footer__text {
+  font-size: 1.8rem;
+  color: var(--default-bg);
+  font-style: normal;
+}
+.footer__text a {
+  color: var(--logo-orange);
+}
+.footer__text a:focus,
+.footer__text a:active,
+.footer__text a:hover {
+  color: var(--logo-green);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+  /*Switch to a moible nav*/
+  /*Remove link group*/
+  .link__group {
+    display: none;
+  }
+  /*display hamburger*/
+  .hamburger {
+    display: flex;
+  }
+  /*Move order online btn*/
+  #nav__btn {
+    display: none;
+  }
+  .header__btn {
+    display: flex;
+  }
+  /*Reframe footer*/
+  .footer {
+    gap: 2.5rem;
+    height: min-content;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .nav__bar {
+    align-items: center;
+  }
+  .header__bar--alt {
+    align-items: center;
+  }
+  .nav__link {
+    margin-top: 0;
+  }
+  .hamburger {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .footer__socials {
+    flex-wrap: wrap;
+  }
+}
