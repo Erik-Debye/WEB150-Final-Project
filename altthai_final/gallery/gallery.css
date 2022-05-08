@@ -24,17 +24,22 @@
   box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.6);
   font-family: var(--para-ft);
   margin: 2.5rem;
-  max-height: 350rem;
-  max-width: max-content;
+
+  min-height: 35rem;
   padding: 0.5rem;
   transition: all 0.25s ease-in-out;
+  max-width: 32rem;
+  min-width: 32rem;
 }
 .card__imgholder {
   padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .card__img {
   border-radius: 0.8rem;
-  border: solid 0.3rem red;
+  border: solid 0.1rem #cfcfcf;
   width: clamp(20rem, 15vw, 28rem);
   height: auto;
 }
@@ -46,7 +51,7 @@
 .card__titleholder {
   align-items: center;
   display: flex;
-  font-size: clamp(2rem, 1.5vw, 2.8rem);
+  font-size: clamp(2rem, 1.5vw, 2.3rem);
   justify-content: space-between;
   margin-right: auto;
   padding-bottom: 0.5rem;
@@ -54,13 +59,13 @@
 }
 .card__btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: var(--logo-green);
   border-radius: 0.4rem;
   border: none;
   box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.3);
-  height: clamp(2.2rem, 2vw, 3.2rem);
+  width: clamp(2.2rem, 2vw, 3.2rem);
   transition: all 0.25s ease-in-out;
   height: clamp(2.2rem, 2vw, 3.2rem);
 }
@@ -82,11 +87,10 @@
 }
 .card__text {
   font-size: clamp(1.8rem, 1vw, 2rem);
-  padding: 0.5rem 0rem 2rem 2rem;
+  padding: 2rem;
 }
 .card__out {
   margin: auto;
-  max-width: 30rem;
   padding: 0.5rem 0rem 2rem 2rem;
 }
 .removed {
