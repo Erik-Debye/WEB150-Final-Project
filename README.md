@@ -4,4 +4,4 @@ This is the final project for my WEB150 class; a complete redesign of a local re
 Note: This site uses modular CSS per class requirements. IRL I would use WebPack to Concatenate my CSS together and minify that file to a production file first. 
 
 # See this site live
-Link: https://6272e486be2df9205a9c7af5--incredible-kleicha-a4b059.netlify.app/ 
+Link: https://incredible-kleicha-a4b059.netlify.app/
