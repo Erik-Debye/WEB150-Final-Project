@@ -25,7 +25,7 @@
 /*Define Custom Font*/
 @font-face {
   font-family: tomatoes;
-  src: url(../src/Tomatoes-O8L8.ttf);
+  src: url(../dist/img/Tomatoes-O8L8.ttf);
 }
 html {
   /* 62.5% of browser set font size*/
