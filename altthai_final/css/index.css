@@ -158,7 +158,6 @@
   font-size: clamp(1.8rem, 2vw, 2.8rem);
 }
 th {
-  font-family: var(--header-ft);
   font-size: clamp(2rem, 3vw, 6rem);
   letter-spacing: 0.2rem;
 }
