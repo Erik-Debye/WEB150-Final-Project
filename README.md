@@ -4,6 +4,8 @@ This is the final project for my WEB150 class; a complete redesign of a local re
 Note: This site uses modular CSS per class requirements. IRL I would use Gulp to Concatenate my CSS together and minify that file to a production file first. 
 
 # See this site live
-Link with PHP Server Support for contact form: https://web150s01u02.hcoding.net/publish/
+~~Link with PHP Server Support for contact form: https://web150s01u02.hcoding.net/publish/~~
+
+The above link was taken down by my college. If anyone has a suggestion for free hosting with a PHP server, please open an issue. 
 
 Link without PHP contact form support: https://incredible-kleicha-a4b059.netlify.app/
