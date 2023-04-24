@@ -12,38 +12,52 @@ const headerBtn = document.querySelector('.nav__btn');
 
 //create fucntion to run on scroll
 function fixedHeader() {
+  const scrollPosition = window.scrollY;
+  // if (scrollPosition > 15) {
+  //   // Add the maximum height class
+  //   requestAnimationFrame(() => {
+  //     document.querySelector('header').classList.remove('h-40');
+  //     document.querySelector('header').classList.add('h-24');
+  //   });
+  // } else {
+  //   // Add the minimum height class
+  //   requestAnimationFrame(() => {
+  //     document.querySelector('header').classList.remove('h-24');
+  //     document.querySelector('header').classList.add('h-40');
+  //   });
+  // }
   //if pixel offset (Y) is more than 10 pixels
-  if (window.pageYOffset > 200) {
-    logo.classList.add('on-scroll--logo');
-  }
-  if (window.pageYOffset > 740) {
-    //add on-scroll class to each el
-    navBar.classList.add('on-scroll--bar');
-    nav.classList.add('on-scroll--nav');
-    navLink.forEach((el) => {
-      el.classList.add('on-scroll--link');
+  if (scrollPosition > 200 && scrollPosition < 740) {
+    requestAnimationFrame(() => {
+      logo.classList.add('on-scroll--logo');
     });
-    headerBtn.classList.add('on-sroll--btn');
+  } else if (scrollPosition > 740) {
+    requestAnimationFrame(() => {
+      logo.classList.add('on-scroll--logo');
+      navBar.classList.add('on-scroll--bar');
+      nav.classList.add('on-scroll--nav');
+      navLink.forEach((el) => {
+        el.classList.add('on-scroll--link');
+      });
+      headerBtn.classList.add('on-sroll--btn');
+    });
   } else {
-    navBar.classList.remove('on-scroll--bar');
-    logo.classList.remove('on-scroll--logo');
-    nav.classList.remove('on-scroll--nav');
-    navLink.forEach((el) => {
-      el.classList.remove('on-scroll--link');
+    requestAnimationFrame(() => {
+      navBar.classList.remove('on-scroll--bar');
+      logo.classList.remove('on-scroll--logo');
+      nav.classList.remove('on-scroll--nav');
+      navLink.forEach((el) => {
+        el.classList.remove('on-scroll--link');
+      });
+      headerBtn.classList.remove('on-sroll--btn');
     });
-    headerBtn.classList.remove('on-sroll--btn');
   }
 }
 
 //Call function on scroll
-window.onscroll = function (e) {
-  e.preventDefault();
-  //not always present
-  if (navBar) {
-    let sticky = navBar.offsetTop;
-    fixedHeader();
-  }
-};
+document.addEventListener('scroll', () => {
+  requestAnimationFrame(fixedHeader);
+});
 
 //##########################################################################################################################
 
